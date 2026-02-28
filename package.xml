@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>late_fusion_for_yolos_cpp</name>
+  <version>0.0.1</version>
+  <description>Multi-camera YOLO Detection 2D and debug image fusion node</description>
+
+  <maintainer email="pavankumarsp02@gmail.com">Pavankumarsp02</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>vision_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
