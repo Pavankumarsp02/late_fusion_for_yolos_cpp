@@ -1,0 +1,30 @@
+fusion_node:
+  ros__parameters:
+    rate: 10.0
+
+    # -------- Fusion Topics --------
+    img_inputs:
+      - /yolos_detector3/debug_image
+      - /yolos_detector2/debug_image
+      - /yolos_detector4/debug_image
+      - /yolos_detector4/debug_image
+      - /yolos_detector5/debug_image
+      - /yolos_detector6/debug_image
+      
+      
+    det_inputs:
+      - /yolos_detector1/detections
+      - /yolos_detector2/detections
+      - /yolos_detector3/detections
+      - /yolos_detector4/detections
+      - /yolos_detector5/detections
+      - /yolos_detector6/detections
+
+    output_det: /fused/detections
+    output_img: /fused/debug_image
+
+    # -------- STITCHING STYLE --------
+    grid_rows: 1
+    grid_cols: 3
+    tile_width: 640
+    tile_height: 480
